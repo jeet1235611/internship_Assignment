@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Register</title>
-</head>
-<body>
-<h1>Register</h1>
-
-<form>
-	<label for="first">First Name:</label>
-	<input id="first" type="text" placeholder="Jitendra" required>
-	<label for="last">Last Name:</label>
-	<input id="last" type="text" placeholder="Sikarwar" required>
-
-	<div>
-		<label>
-			Email:
-			<input name="email" type="email" placeholder="your email" required>
-		</label>
-		<label>
-			Password:
-			<input name="Password" type="Password" placeholder="password" required>
-		</label>
-	</div>
-
-	<div>
-		<label for="agreed">I agree to the terms and conidtions:</label>
-		<input id="agreed" name="agreed" type="checkbox">
-	</div>
-
-	<input type="submit">
-</form>
-
+    <head>
+        <title>Sign up to {this}</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        
+        <form method="post" target="#" onsubmit="return validate()">
+        <h1>Sign up to {this}</h1>
+        <p>To be able to use all features of {this} you will require an account. The form below will allow you to create a new account if you don't have one yet.</p>
+        
+      	Name<br>
+      	<input type="text" name="name"><br>
+        Email<br>
+	<input type="text" name="email"><br>
+        Retype email<br>
+      	<input type="text" name="retype_email"><br>
+        Create a password<br>
+	<input type="password" name="password"><br>
+        Retype password<br>
+	<input type="password" name="retype_password"><br>
+        
+        <label>
+          <input type="checkbox" name="terms">By signing up to {this} you agree to your
+           <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
+        </label>
+            
+      	<div class="button">
+          <input type="submit" class="button" value="Set Up Account">
+        </div>
+        
+	</form>
 </body>
 </html>
